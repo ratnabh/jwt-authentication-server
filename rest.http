@@ -1,0 +1,26 @@
+GET http://localhost:5000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDUxMDcwNTAsImV4cCI6MTYwNTExMDY1MCwiYXVkIjoiNWZhYWUzYjQxOTNjODUwOTQ4ZTFjYjcxIn0.0SHZDmDPgCpbo2E-zOlwi-z3MyyiQNcmPL4d2shGEXA
+
+###
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+     "email":"ratnabh2621@gmail.com",
+    "password":"123"
+}
+###
+POST http://localhost:5000/auth/register
+Content-Type: application/json
+
+{
+    "email":"ratnabh2621@gmail.com",
+    "password":"123"
+}
+###
+
+POST http://localhost:5000/auth/refresh-token
+
+
+###
+DELETE http://localhost:5000/auth/logout
